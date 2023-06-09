@@ -77,15 +77,13 @@ export default function ClassicLoginView() {
       debugger
       // console.log(user)
       signInWithEmailAndPassword(getAuth(firebaseApp), data.email, data.password).then((userCredential)=>{
-        debugger
         const user1 = userCredential.user;
         console.log(user1)
         router.push("https://docs.minimals.cc/components/badge-status");
       }).catch((error)=>{
         const errorCode = error.code;
     const errorMessage = error.message;
-    alert("Djt me sai roi", errorCode)
-    debugger
+    alert("Djt me sai roi")
 
     console.log();
       })
