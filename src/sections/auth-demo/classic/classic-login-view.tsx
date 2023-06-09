@@ -74,7 +74,6 @@ export default function ClassicLoginView() {
   const firebaseApp = initializeApp(FIREBASE_API);
   const onSubmit = useCallback(async (data: FormValuesProps) => {
     try {
-      debugger
       // console.log(user)
       signInWithEmailAndPassword(getAuth(firebaseApp), data.email, data.password).then((userCredential)=>{
         const user1 = userCredential.user;
@@ -88,7 +87,6 @@ export default function ClassicLoginView() {
     console.log();
       })
       // login(data.email, data.password).then(()=>{console.log("Test")})
-      debugger
       // memoizedValue.login(data.email, data.password).then(()=>{console.log("S")})
       await new Promise((resolve) => setTimeout(resolve, 500));
       console.info('DATA', data);
