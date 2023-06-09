@@ -1,5 +1,4 @@
 // sections
-import { HomeView } from 'src/sections/home/view';
 import ClassicLoginPage from './auth-demo/classic/login/page';
 
 // ----------------------------------------------------------------------
